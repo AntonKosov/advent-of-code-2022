@@ -14,6 +14,7 @@ func main() {
 
 func read() []string {
 	lines := aoc.ReadAllInput()
+	lines = lines[:len(lines)-1]
 
 	return lines
 }
