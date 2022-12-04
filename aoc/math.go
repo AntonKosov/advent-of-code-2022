@@ -10,3 +10,10 @@ func Max[T Ordinary](a, b T) T {
 	}
 	return b
 }
+
+func Min[T Ordinary](a, b T) T {
+	if a < b {
+		return a
+	}
+	return b
+}
