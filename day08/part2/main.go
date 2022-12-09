@@ -33,7 +33,7 @@ func process(patch [][]byte) int {
 
 	score := func(x, y int) int {
 		h := patch[y][x]
-		countScore := func(off aoc.Vector2[int], count int) int {
+		countScore := func(off aoc.Vector2, count int) int {
 			s := 0
 			pos := aoc.NewVector2(x, y)
 			for i := 0; i < count; i++ {

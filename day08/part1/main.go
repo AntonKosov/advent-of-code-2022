@@ -29,9 +29,9 @@ func read() [][]byte {
 }
 
 func process(patch [][]byte) int {
-	visible := map[aoc.Vector2[int]]bool{}
+	visible := map[aoc.Vector2]bool{}
 
-	addVisible := func(pos, off aoc.Vector2[int], count int) {
+	addVisible := func(pos, off aoc.Vector2, count int) {
 		visible[pos] = true
 		tallest := patch[pos.Y][pos.X]
 		for i := 1; i < count && tallest < 9; i++ {

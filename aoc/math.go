@@ -17,3 +17,10 @@ func Min[T Ordinary](a, b T) T {
 	}
 	return b
 }
+
+func Abs[T Ordinary](v T) T {
+	if v > 0 {
+		return v
+	}
+	return -v
+}
