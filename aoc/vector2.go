@@ -32,3 +32,7 @@ func (v Vector2) Norm() Vector2 {
 
 	return v
 }
+
+func (v Vector2) ManhattanDst() int {
+	return Abs(v.X) + Abs(v.Y)
+}
