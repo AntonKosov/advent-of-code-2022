@@ -7,9 +7,8 @@ import (
 )
 
 func main() {
-	data := read()
-	r := process(data)
-	fmt.Printf("Answer: %v\n", r)
+	answer := process(read())
+	fmt.Printf("Answer: %v\n", answer)
 }
 
 func read() []string {
