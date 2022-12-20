@@ -1,7 +1,7 @@
 package aoc
 
 type Ordinary interface {
-	byte | int
+	byte | int | int16
 }
 
 func Max[T Ordinary](a, b T) T {
