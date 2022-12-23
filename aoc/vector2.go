@@ -36,3 +36,13 @@ func (v Vector2) Norm() Vector2 {
 func (v Vector2) ManhattanDst() int {
 	return Abs(v.X) + Abs(v.Y)
 }
+
+// RotateLeft rotates the vector to the left (left-handed system)
+func (v Vector2) RotateLeft() Vector2 {
+	return NewVector2(v.Y, -v.X)
+}
+
+// RotateRight rotates the vector to the right (left-handed system)
+func (v Vector2) RotateRight() Vector2 {
+	return NewVector2(-v.Y, v.X)
+}
