@@ -9,7 +9,6 @@ func Must(err error) {
 }
 
 func ParseInts(str string) []int {
-	// r := regexp.MustCompile("[0-9]+")
 	r := regexp.MustCompile(`[\d]+`)
 	matches := r.FindAllString(str, -1)
 
